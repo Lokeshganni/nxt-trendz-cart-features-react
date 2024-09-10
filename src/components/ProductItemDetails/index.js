@@ -40,6 +40,7 @@ class ProductItemDetails extends Component {
     } = this.props
     if (id !== prevProps.match.params.id) {
       this.getProductData()
+      this.setState({quantity: 1})
     }
   }
 
